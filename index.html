@@ -1,10 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8"/>
-	<title>ACO site</title>
+    <meta charset="utf-8"/>
+    <title>ACO site</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.4;
+            margin: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        iframe {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>ACO placeholder</h1>
+    <h1>ACO Explanation</h1>
+    <p>The Ant Colony Optimization algorithm is a swarm intelligence pathfinding algorithm.</p>
+    <p>It can be used to solve the traveling salesman problem, where we want to find the best way to visit every point once and then return to where we started.</p>
+    <p>We are using it to design optimal bus routes with given origins and destinations.</p>
+    <p>An optimal bus route is not necessarily the shortest or fastest way between 2 points.</p>
+    <p>There are many factors to consider when designing a bus route, such as the number of people reached. This makes finding an optimal solution difficult (it is an NP-hard problem).</p>
+    <p>The algorithm is designed to mimic how ants work together to find food. The ants can explore, and they will leave pheromones as they go. Pheromones will influence ants to go the same way, but they do evaporate over time.</p>
+    <p>We have used these pheromones along with population data and distance to give edges in a road network weights. The ants can then freely explore from an origin until they reach their destination. The ants will have a probability to go down a certain edge based on the weightings, but there is some randomness to allow them to try new paths.</p>
+    <br><h2>Video demonstration:</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DhVvAd_8dlQ?si=ml_ImspHkZccHWHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </body>
 </html>
